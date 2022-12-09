@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --bg-color: black;
+    --left-side: purple;
+    --right-side: yellow;
+    --text-color: white;
+    --word-font: 'Lobster', cursive;
+}
+html{
+    scroll-behavior: smooth
+}
+body{
+    margin:0;
+    background-color: var(--bg-color);
+}
+.side{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    position: absolute;
+}
+.side .title{
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+    font-size: 8vw;
+    margin: 0 15vw;
+    width: 70vw;
+}
+.edit{
+    font-family: var(--word-font);
+    font-size: 1.3em;
+    line-height: .8em;
+}
+#left-side{
+    background-color: var(--left-side);
+    z-index: 2;
+}
+#right-side{
+    background-color: var(--right-side);
+}
